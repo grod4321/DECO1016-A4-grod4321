@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Links the css file -->
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    
+    <body>
+        <!-- Seperates the following images from the rest of the article -->
+        <header>
+            <!-- The class "row" makes the flex-direction row instead of column -->
+            <div class="row">
+                <!-- Shows the avsuper logo and links it to the landing page when clicked on -->
+                <a href="LandingPage.html"><img id="logo" src="img/avsuper logo.png"></a>
+                <img src="img/Home.png" id="symbol">
+            </div>
+        </header>
+        <div class="row">
+            <!-- Creates the background of the left side of the article, holding the following items inside -->
+            <div class="bgleft">
+                <h1>Members</h1>
+                <p>AvSuper membership is open to anyone eligible to join an Australian superannuation fund, including people no longer associated with the aviation industry, families of existing AvSuper members and the self-employed.</p>
+            </div>
+            <!-- Creates the background of the right side of the article, holding the following items inside -->
+            <div class="bgright">
+
+                <!-- Below adapted from "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto" -->
+                <!-- Class that contains the slides and the slideshow -->
+                <div class="slideshow-container">
+                    <!-- Class that contains the slides and the fade effect -->
+                    <div class="mySlides fade">
+                        <img src="img/av happy.jpg">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/av award.jpg">
+                    </div>
+                </div>
+                <!-- Creates the dot references used in the slideshow animation -->
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span>  
+                </div>
+                <!-- Above adapted from "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto" -->
+
+                <div class="buttons">
+                    <a class="button"><p>LOG IN</p></a>
+                    <!-- Button class to create a button that does something when pressed (this one links to the first signup page) -->
+                    <a class="button" href="SignUpPage1.html"><p>SIGN UP</p></a>
+                </div>
+            </div>
+        </div>
+        <main>
+        </main>
+        <!-- Links the javascript file -->
+        <script src="styles.js"></script> 
+    </body>
+</html>
+
+<!-- Images used in this page: 
+    - AvSuper named as 2017 ACT small employer for the Defence Reserves Support Council. (2019). Retrieved 11 November 2019, from https://www.avsuper.com.au/avsuper-act-small-employer-defence-reserves/
+    - About AvSuper. (2019). Retrieved 11 November 2019, from https://www.avsuperadvice.com.au/about/ -->

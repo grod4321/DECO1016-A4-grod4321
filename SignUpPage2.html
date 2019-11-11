@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <a href="LandingPage.html"><img id="logo" src="img/avsuper logo.png"></a>
+                <img src="img/Form.png" id="symbol">
+            </div>
+        </header>
+        <div class="bgcentre">
+            <a id="cancel" href="LandingPage.html"><p>CANCEL</p></a>
+            <div class="row">
+                <h1>Sign Up</h1>
+                <div id="step"><p>Step 2</p></div>
+            </div>
+            <img id="su" src="img/signup2.png">
+            <form action = "/cgi-bin/test.cgi" name = "myForm2" onsubmit = "return(validate2());"> <!--Adapted from "https://www.tutorialspoint.com/javascript/javascript_form_validations.htm"-->
+                <div class="row">
+                    <p>Surname: <input type="text" id="surname" name="surname"></p>
+                    &nbsp;
+                    <!-- The class "column" makes the flex-direction column instead of row -->
+                    <div class="column">
+                        <!-- Creates a dropdown menu for the user to select an option -->
+                        <div id="title"><p>Title: </p>
+                            <select>
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Ms">Ms</option>
+                                <option value="Miss">Miss</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <p>Given Names: </p><input type="text" id="GivenNames" name="GN">
+                <p>Address: <input type="text" id="address" name="address"></p>
+                <div class="row">
+                    <p>Suburb: <input type="text" id="suburb" name="suburb"></p>
+                    &nbsp;
+                    <div class="column">
+                        <div id="state"><p>State: </p>
+                            <select>
+                                <option value="NSW">NSW</option>
+                                <option value="QLD">QLD</option>
+                                <option value="Vic">Vic</option>
+                                <option value="SA">SA</option>
+                                <option value="NT">NT</option>
+                                <option value="WA">WA</option>
+                            </select>
+                        </div>
+                    </div>
+                    &nbsp;
+                    <!-- Allows the input of a number for the user to enter their postcode -->
+                    <p id="post">Postcode: <input type="number" id="postcode" name="postcode"></p>
+                </div>
+                    <!-- Wraps and influences the submit and back buttons -->
+                <div class="subbut">
+                    <!-- Takes the user back to the previous page -->
+                    <a class="button" href="SignUpPage1.html"><p>< BACK</p></a>
+                    <input type="submit" id="next" class="button" value="NEXT >" onclick='this.form.action="SignUpPage3.html"'></input>
+                </div>
+            </form>
+        </div>
+        <script src="styles.js" type="text/javascript"></script>
+    </body>
+</html>
